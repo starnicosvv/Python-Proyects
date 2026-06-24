@@ -2,6 +2,11 @@ import Calculadora
 import Agenda
 import TODO_list
 import GestorDeGastosPersonales
+from db import inicializar_bd
+
+# Al iniciar el programa
+inicializar_bd()
+
 
 def menu_principal():
     while True:

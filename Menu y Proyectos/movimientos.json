@@ -1,9 +1,0 @@
-[
-    {
-        "tipo": "gasto",
-        "descripcion": "Comida",
-        "categoria": "General",
-        "monto": 20000.0,
-        "fecha": "2005-08-29"
-    }
-]

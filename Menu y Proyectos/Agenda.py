@@ -1,13 +1,15 @@
 import funciones_contactos
-import Utils
+
 def menu():
-    contactos = Utils.cargar_json("contactos.json")
+    
+
     while True:
         print("\n--- Agenda de Contactos ---")
         print("1. Agregar contacto")
         print("2. Buscar contacto")
         print("3. Mostrar todos")
-        print("4. Salir")
+        print("4. Eliminar contacto")
+        print("5. Salir")
 
         opcion = input("Elige una opción: ")
 
@@ -15,23 +17,26 @@ def menu():
             nombre = input("Nombre: ")
             telefono = input("Teléfono: ")
             email = input("Email: ")
-            funciones_contactos.agregar_contacto(contactos, nombre, telefono, email)
-            print("Contacto agregado.")
+            funciones_contactos.agregar_contacto(nombre, telefono, email)
+
         elif opcion == "2":
             nombre = input("Nombre a buscar: ")
-            contacto = funciones_contactos.buscar_contacto(contactos, nombre)
+            contacto = funciones_contactos.buscar_contacto(nombre)
             if contacto:
-                print("Encontrado:", contacto)
+                print("✅ Encontrado:", contacto)
             else:
-                print("No existe ese contacto.")
+                print("ℹ️ No existe ese contacto.")
+
         elif opcion == "3":
-            print("Contactos:")
-            for c in contactos:
-                print(c)
+            funciones_contactos.mostrar_contactos()
+
         elif opcion == "4":
-            print("¡Hasta luego!")
+            nombre = input("Nombre del contacto a eliminar: ")
+            funciones_contactos.eliminar_contacto(nombre)
+
+        elif opcion == "5":
+            print("👋 ¡Hasta luego!")
             break
+
         else:
-            print("Opción inválida.")
-
-
+            print("❌ Opción inválida. Por favor, ingrese un número válido.")
