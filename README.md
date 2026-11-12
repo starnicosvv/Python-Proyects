@@ -1,6 +1,12 @@
 # 📚 Menú de Proyectos en Python
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](#)
+[![Consola](https://img.shields.io/badge/Interfaz-Consola-4B5563?style=flat-square)](#)
+[![JSON](https://img.shields.io/badge/Persistencia-JSON-000000?style=flat-square&logo=json&logoColor=white)](#)
+
 Sistema desarrollado en Python que integra múltiples aplicaciones de consola dentro de un único menú principal.
+
+> Proyecto académico y de práctica para aplicar programación modular, manejo de archivos y persistencia de datos.
 
 ## 🚀 Descripción
 
@@ -227,6 +233,8 @@ Esto permite mantener un historial de operaciones realizadas.
 ---
 
 # 👨‍💻 Autor
+
+**Adolfo Sanabria** · [GitHub](https://github.com/starnicosvv) · [LinkedIn](https://www.linkedin.com/in/nicol%C3%A1s-sanabria-141746309/)
 
 Desarrollado como proyecto académico y de práctica para fortalecer conocimientos en:
 
